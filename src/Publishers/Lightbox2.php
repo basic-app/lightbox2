@@ -5,7 +5,7 @@
  */
 namespace BasicApp\Lightbox2\Publishers;
 
-use BasicApp\Core\Publisher;
+use BasicApp\Publisher\Publisher;
 
 class Lightbox2 extends Publisher
 {
@@ -38,8 +38,8 @@ class Lightbox2 extends Publisher
      */
     public function publish(): bool
     {
-        $this->deleteFiles($this->destination);
-
-        return parent::publish();
+        return $this->wipe()
+            ->addPath('/')
+            ->merge(true);
     }
 }

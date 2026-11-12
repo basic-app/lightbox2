@@ -3,7 +3,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BasicApp\\Lightbox2\\": "src/"
+            "BasicApp\\Lightbox2\\": "src"
         }
+    },
+    "require": {
+        "basic-app/publisher" : "*"
     }
 }
