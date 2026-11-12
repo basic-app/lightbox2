@@ -7,6 +7,6 @@
         }
     },
     "require": {
-        "basic-app/publisher" : "*"
+        "basic-app/publisher": "*"
     }
 }
