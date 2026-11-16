@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
@@ -6,12 +7,11 @@ declare(strict_types=1);
  */
 use CodeIgniter\View\View;
 
-if (!function_exists('register_lightbox2'))
-{
-    function register_lightbox2(array $params = [], ?View $renderer = null) : void
+if (!function_exists('register_lightbox2')) {
+    function register_lightbox2(array $params = [], ?View $renderer = null): void
     {
         helper(['scripts', 'styles', 'jquery3', 'render_view']);
-         
+
         register_jquery3($params['jquery3'] ?? [], $renderer);
 
         unset($params['jquery3']);
