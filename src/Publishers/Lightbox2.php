@@ -15,7 +15,7 @@ class Lightbox2 extends Publisher
     /**
      * Tell Publisher where to create destination directory.
      */
-    protected $createDestination = true;
+    protected bool $createDestination = true;
 
     /**
      * Tell Publisher where to get the files.

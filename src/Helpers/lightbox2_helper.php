@@ -16,7 +16,7 @@ if (!function_exists('register_lightbox2')) {
 
         unset($params['jquery3']);
 
-        add_style(render_view('BasicApp\Lightbox2\styles', $params, $renderer), true, $renderer);
-        add_script(render_view('BasicApp\Lightbox2\scripts', $params, $renderer), true, $renderer);
+        add_style(render_view('BasicApp\Lightbox2\styles', $params), true, $renderer);
+        add_script(render_view('BasicApp\Lightbox2\scripts', $params), true, $renderer);
     }
 }
